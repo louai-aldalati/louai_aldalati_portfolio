@@ -1,0 +1,117 @@
+/* ======= أساسي ======= */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.8;           /* زيادة المسافة بين الأسطر */
+    background: #f4f4f4;        /* لون خلفي أفتح */
+    color: #222;                /* لون نص داكن لسهولة القراءة */
+    font-size: 18px;            /* زيادة حجم الخط الأساسي */
+}
+
+/* ======= الرأس ======= */
+header {
+    background: #1a1a1a;        /* داكن أكثر لمزيد من التباين */
+    color: #fff;
+    padding: 2rem 1rem;         /* مساحة أكبر حول المحتوى */
+    text-align: center;
+}
+header h1 {
+    font-size: 2.5rem;          /* عنوان أكبر */
+    margin-bottom: 0.5rem;
+}
+header p {
+    font-size: 1.2rem;          /* نص ثانوي أكبر */
+    margin-bottom: 1rem;
+}
+header nav a {
+    color: #fff;
+    margin: 0 1rem;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: color .3s;
+}
+header nav a:hover {
+    color: #ffcc00;             /* لون تفاعلي عند المرور */
+}
+
+/* ======= العناوين ======= */
+h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    border-bottom: 2px solid #ddd;
+    padding-bottom: 0.5rem;
+}
+
+/* ======= الأقسام ======= */
+section {
+    padding: 2rem 1rem;
+    max-width: 900px;
+    margin: auto;
+    background: #fff;           /* خلفية بيضاء لكل قسم */
+    border-radius: 8px;         /* زوايا مستديرة */
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+    margin-bottom: 2rem;
+}
+
+/* ======= مشاريع ======= */
+.project-item {
+    display: flex;
+    flex-wrap: wrap;            /* يدعم الالتفاف على الشاشات الصغيرة */
+    align-items: flex-start;
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+.project-logo img {
+    width: 150px;               /* تكبير الشعار */
+    height: auto;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+.project-content {
+    flex: 1;
+    font-size: 1rem;
+}
+.project-content strong {
+    font-size: 1.2rem;
+}
+.project-content a {
+    display: inline-block;
+    margin-top: 0.5rem;
+    text-decoration: none;
+    color: #0056b3;
+    transition: opacity .3s;
+}
+.project-content a:hover {
+    opacity: 0.7;
+}
+.project-media {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-top: 1rem;
+}
+.project-media img {
+    width: calc(50% - 0.5rem);  /* صورتان في الصف */
+    height: auto;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+/* ======= تواصل ======= */
+.contact p,
+.contact a {
+    font-size: 1.1rem;
+    margin-bottom: 0.5rem;
+}
+
+/* ======= تذييل ======= */
+footer {
+    background: #1a1a1a;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+    font-size: 0.9rem;
+}
