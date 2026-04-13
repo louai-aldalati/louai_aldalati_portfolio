@@ -3,71 +3,154 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Louai Aldalati – Software Engineer</title>
+    <title>Louai Aldalati – Software Developer</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
         <h1>Louai Aldalati</h1>
-        <p>Software Engineering Student | Django Developer | Multilingual</p>
+        <p>Software Developer | Backend (Django) & AI Solutions | Multilingual</p>
         <nav>
             <a href="index_ar.html">العربية</a> |
             <a href="index_tr.html">Türkçe</a>
+            <button id="theme-toggle" class="theme-btn">
+                <span id="theme-icon">🌙</span>
+            </button>
         </nav>
     </header>
 
     <section class="about">
         <h2>About Me</h2>
-        <p>I am a software engineering student with experience in developing web applications using Django. I speak Arabic, English, and Turkish fluently.</p>
+        <p>Software Engineering student specializing in developing integrated software solutions that merge the power of Backend (Django) with AI models (LLMs) and Computer Vision. Characterized by analytical thinking and fluency in three languages (Arabic, English, Turkish). Highly motivated to leverage modern technologies to innovate efficient systems and solve complex real-world problems.</p>
     </section>
 
     <section class="projects">
-        <h2>My Projects</h2>
+        <h2>Technical Projects</h2>
         <ul>
             <li class="project-item">
                 <div class="project-logo">
-                    <img src="images/kelime6/kelime6-logo.png" alt="Logo for Word Memorization Game">
+                    <img src="images/ai_hotel_chatbot/ai_hotel_chatbot_logo.png" alt="Logo for AI Hotel Chatbot">
                 </div>
                 <div class="project-content">
-                    <strong>Foreign Language Vocabulary Memorization Website</strong> – A Django-based web platform for memorizing foreign words using the 6-repetition principle. Designed for Turkish speakers  
-                    <a href="https://github.com/louai-aldalati/kelime6" target="_blank">View on GitHub</a>
+                    <strong>AI Hotel Chatbot</strong> <br>
+                    <em>Technologies: Llama 3 (8B Instruct), RAG, Fine-Tuning, NLP</em>
+                    <ul>
+                        <li>Developed an advanced intelligent assistant based on the open-source Llama 3 model to provide accurate and automated responses.</li>
+                        <li>Applied Retrieval-Augmented Generation (RAG) and Fine-Tuning to fully customize model responses based on specific hotel policies and data, enhancing customer service efficiency.</li>
+                    </ul>
+                    <a href="https://github.com/louai-aldalati/sunrise_hotel" target="_blank">View on GitHub</a>
                     <div class="project-media">
-                        <img src="images/kelime6/kelime6-1.png" alt="Word Game Screenshot 1">
-                        <img src="images/kelime6/kelime6-2.png" alt="Word Game Screenshot 2">
-                        <img src="images/kelime6/kelime6-3.png" alt="Word Game Screenshot 3">
-                        <img src="images/kelime6/kelime6-4.png" alt="Word Game Screenshot 4">
+                        <img src="images/ai_hotel_chatbot/ai_hotel_chatbot_1.png" alt="Chatbot Screenshot 1">
+                        <img src="images/ai_hotel_chatbot/ai_hotel_chatbot_2.png" alt="Chatbot Screenshot 2">
+                        <img src="images/ai_hotel_chatbot/ai_hotel_chatbot_3.png" alt="Chatbot Screenshot 3">
+                        <img src="images/ai_hotel_chatbot/ai_hotel_chatbot_4.png" alt="Chatbot Screenshot 4">
                     </div>
                 </div>
             </li>
 
             <li class="project-item">
                 <div class="project-logo">
-                    <img src="images/tinyhouse/tinyhouse-logo.png" alt="Logo for Tiny House Reservation">
+                    <img src="images/real_time_emotion_recognition/real_time_emotion_recognition_logo.png" alt="Logo for Real-Time Emotion Recognition">
                 </div>
                 <div class="project-content">
-                    <strong>Tiny House Reservation System</strong> – A Django-based web platform for managing and renting tiny houses. Designed for Turkish speakers
-                    <a href="https://github.com/louai-aldalati/tinyhouse" target="_blank">View on GitHub</a>
+                    <strong>Real-Time Emotion Recognition</strong> <br>
+                    <em>Technologies: Computer Vision, MobileNetV2, Transfer Learning, Python</em>
+                    <ul>
+                        <li>Built a local computer vision system that analyzes live webcam feeds to classify 8 different human emotions with high accuracy.</li>
+                        <li>Utilized Transfer Learning with the MobileNetV2 architecture, fine-tuning final layers to accelerate performance and reduce resource consumption.</li>
+                    </ul>
+                    <a href="https://github.com/louai-aldalati/Emotion-Recognition-MobileNetV2" target="_blank">View on GitHub</a>
                     <div class="project-media">
-                        <img src="images/tinyhouse/tinyhouse-1.png" alt="Tiny House Screenshot 1">
-                        <img src="images/tinyhouse/tinyhouse-2.png" alt="Tiny House Screenshot 2">
-                        <img src="images/tinyhouse/tinyhouse-3.png" alt="Tiny House Screenshot 3">
-                        <img src="images/tinyhouse/tinyhouse-4.png" alt="Tiny House Screenshot 4">
+                        <img src="images/real_time_emotion_recognition/real_time_emotion_recognition_1.png" alt="Emotion Recognition Screenshot 1">
+                        <img src="images/real_time_emotion_recognition/real_time_emotion_recognition_2.png" alt="Emotion Recognition Screenshot 2">
+                        <img src="images/real_time_emotion_recognition/real_time_emotion_recognition_3.png" alt="Emotion Recognition Screenshot 3">
+                        <img src="images/real_time_emotion_recognition/real_time_emotion_recognition_4.png" alt="Emotion Recognition Screenshot 4">
                     </div>
                 </div>
             </li>
-            
-            <!-- يمكنك إضافة المزيد -->
+
+            <li class="project-item">
+                <div class="project-logo">
+                    <img src="images/weather_forecasting_ml_ api/weather_forecasting_ml_ api_logo.png" alt="Logo for Weather Forecasting ML API">
+                </div>
+                <div class="project-content">
+                    <strong>Weather Forecasting ML API</strong> <br>
+                    <em>Technologies: Machine Learning, XGBoost, Time-Series Analysis, Django, DRF</em>
+                    <ul>
+                        <li>Designed and trained a machine learning model using XGBoost to analyze time-series data (temperature, humidity, wind direction) for future value prediction.</li>
+                        <li>Developed the backend using Django, providing the AI model as a service via Django REST API for seamless integration with web or mobile apps.</li>
+                    </ul>
+                    <a href="https://github.com/louai-aldalati/weather-predictor" target="_blank">View on GitHub</a>
+                    <div class="project-media">
+                        <img src="images/weather_forecasting_ml_ api/weather_forecasting_ml_ api_1.png" alt="Weather Predictor Screenshot 1">
+                        <img src="images/weather_forecasting_ml_ api/weather_forecasting_ml_ api_2.png" alt="Weather Predictor Screenshot 2">
+                        <img src="images/weather_forecasting_ml_ api/weather_forecasting_ml_ api_3.png" alt="Weather Predictor Screenshot 3">
+                        <img src="images/weather_forecasting_ml_ api/weather_forecasting_ml_ api_4.png" alt="Weather Predictor Screenshot 4">
+                    </div>
+                </div>
+            </li>
+
+            <li class="project-item">
+                <div class="project-logo">
+                    <img src="images/kelime6/kelime6_logo.png" alt="Logo for Kelime6 Language Platform">
+                </div>
+                <div class="project-content">
+                    <strong>Kelime6: Language Learning Platform</strong> <br>
+                    <em>Technologies: Django, Python, Relational Database, Git, Scrum</em>
+                    <ul>
+                        <li>Programmed an educational system based on the Spaced Repetition System (SRS) algorithm to schedule word appearances based on user performance.</li>
+                        <li>Developed modules for user authentication, analytical dashboards, and a dynamic testing system including an interactive Wordle game.</li>
+                    </ul>
+                    <a href="https://github.com/louai-aldalati/kelime6" target="_blank">View on GitHub</a>
+                    <div class="project-media">
+                        <img src="images/kelime6/kelime6_1.png" alt="Kelime6 Screenshot 1">
+                        <img src="images/kelime6/kelime6_2.png" alt="Kelime6 Screenshot 2">
+                        <img src="images/kelime6/kelime6_3.png" alt="Kelime6 Screenshot 3">
+                        <img src="images/kelime6/kelime6_4.png" alt="Kelime6 Screenshot 4">
+                    </div>
+                </div>
+            </li>
+
+            <li class="project-item">
+                <div class="project-logo">
+                    <img src="images/tinyhouse/tinyhouse_logo.png" alt="Logo for TinyHouse Management System">
+                </div>
+                <div class="project-content">
+                    <strong>TinyHouse: Rental Management System</strong> <br>
+                    <em>Technologies: Django, SQL (Stored Procedures, Triggers), RBAC</em>
+                    <ul>
+                        <li>Developed a property management platform supporting advanced Role-Based Access Control (RBAC) for Admins, Hosts, and Guests.</li>
+                        <li>Engineered a normalized relational database utilizing Stored Procedures and Triggers to automate booking and payment updates.</li>
+                    </ul>
+                    <a href="https://github.com/louai-aldalati/tinyhouse" target="_blank">View on GitHub</a>
+                    <div class="project-media">
+                        <img src="images/tinyhouse/tinyhouse_1.png" alt="TinyHouse Screenshot 1">
+                        <img src="images/tinyhouse/tinyhouse_2.png" alt="TinyHouse Screenshot 2">
+                        <img src="images/tinyhouse/tinyhouse_3.png" alt="TinyHouse Screenshot 3">
+                        <img src="images/tinyhouse/tinyhouse_4.png" alt="TinyHouse Screenshot 4">
+                    </div>
+                </div>
+            </li>
         </ul>
     </section>
 
     <section class="contact">
         <h2>Contact</h2>
-        <p>Email: <a href="mailto:luaidalati@gmail.com">luaidalati@gmail.com</a></p>
+        <p>Email: <a href="mailto:louai.workmail@gmail.com">louai.workmail@gmail.com</a></p>
         <p>GitHub: <a href="https://github.com/louai-aldalati" target="_blank">github.com/louai-aldalati</a></p>
     </section>
 
     <footer>
-        <p>&copy; 2025 Louai Aldalati</p>
+        <p>&copy; 2026 Louai Aldalati</p>
     </footer>
+
+    <div id="lightbox" class="lightbox">
+        <span class="close-lightbox">&times;</span>
+        <img class="lightbox-content" id="lightbox-img">
+        <a class="prev-btn" onclick="changeImage(-1)">&#10094;</a>
+        <a class="next-btn" onclick="changeImage(1)">&#10095;</a>
+    </div>
+
+    <script src="script.js"></script>
 </body>
 </html>

@@ -3,69 +3,155 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Louai Dalati – Yazılım Mühendisliği Öğrencisi</title>
+    <title>Louai Aldalati – Yazılım Geliştirici</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
         <h1>Louai Aldalati</h1>
-        <p>Yazılım Mühendisliği Öğrencisi | Django Geliştiricisi | Üç Dilde Akıcı</p>
+        <p>Yazılım Geliştirici | Backend (Django) & Yapay Zeka Çözümleri | Üç Dilde Akıcı</p>
         <nav>
             <a href="index.html">English</a> |
             <a href="index_ar.html">العربية</a>
+            <button id="theme-toggle" class="theme-btn">
+                <span id="theme-icon">🌙</span>
+            </button>
         </nav>
     </header>
 
     <section class="about">
         <h2>Hakkımda</h2>
-        <p>Ben yazılım mühendisliği öğrencisiyim. Django kullanarak web uygulamaları geliştirme konusunda deneyimim var. Arapça, İngilizce ve Türkçe dillerini akıcı şekilde konuşuyorum.</p>
+        <p>Backend (Django), Yapay Zeka modelleri (LLM) ve Bilgisayarlı Görü (Computer Vision)  alanlarını birleştirerek entegre yazılım çözümleri geliştirmeye odaklanan Yazılım Mühendisliği öğrencisi. Analitik düşünme becerisine sahip, Arapça, İngilizce ve Türkçe dillerinde akıcı iletişim kurabilmektedir. Gerçek dünya problemlerine modern teknolojilerle verimli çözümler üretme konusunda yüksek motivasyona sahiptir.</p>
     </section>
 
     <section class="projects">
-    <h2>Projelerim</h2>
+    <h2>Teknik Projeler</h2>
     <ul>
         <li class="project-item">
             <div class="project-logo">
-                <img src="images/kelime6/kelime6-logo.png" alt="6 Tekrar Prensibine Dayalı Kelime Ezberleme Oyunu Logosu">
+                <img src="images/ai_hotel_chatbot/ai_hotel_chatbot_logo.png" alt="Yapay Zeka Destekli Otel Sohbet Botu Logosu">
             </div>
             <div class="project-content">
-                <strong>Yabancı Dil Kelime Ezberleme Sitesi</strong> – 6 tekrar prensibiyle yabancı kelimeleri ezberlemeye yönelik Django tabanlı bir web platformu. Türkçe konuşanlar için tasarlanmıştır  
-                <a href="https://github.com/louai-aldalati/kelime6" target="_blank">GitHub'da Görüntüle</a>
+                <strong>Yapay Zeka Destekli Otel Sohbet Botu (AI Hotel Chatbot)</strong> <br>
+                <em>Teknolojiler: Llama 3 (8B Instruct), RAG, Fine-Tuning, NLP</em>
+                <ul>
+                    <li>Doğru ve otomatik yanıtlar sağlamak için açık kaynaklı Llama 3 modeline dayalı gelişmiş bir akıllı asistan geliştirildi.</li>
+                    <li>Müşteri hizmetleri verimliliğini artırmak amacıyla, model yanıtlarını belirli otel politikalarına ve verilerine göre tamamen özelleştirmek için Geri Getirme ile Güçlendirilmiş Üretim (RAG) ve İnce Ayar (Fine-Tuning) teknikleri uygulandı.</li>
+                </ul>
+                <a href="https://github.com/louai-aldalati/sunrise_hotel" target="_blank">GitHub'da Görüntüle</a>
                 <div class="project-media">
-                    <img src="images/kelime6/kelime6-1.png" alt="Kelime Ezberleme Oyunu Ekran Görüntüsü 1">
-                    <img src="images/kelime6/kelime6-2.png" alt="Kelime Ezberleme Oyunu Ekran Görüntüsü 2">
-                    <img src="images/kelime6/kelime6-3.png" alt="Kelime Ezberleme Oyunu Ekran Görüntüsü 3">
-                    <img src="images/kelime6/kelime6-4.png" alt="Kelime Ezberleme Oyunu Ekran Görüntüsü 4">
+                    <img src="images/ai_hotel_chatbot/ai_hotel_chatbot_1.png" alt="Sohbet Botu Ekran Görüntüsü 1">
+                    <img src="images/ai_hotel_chatbot/ai_hotel_chatbot_2.png" alt="Sohbet Botu Ekran Görüntüsü 2">
+                    <img src="images/ai_hotel_chatbot/ai_hotel_chatbot_3.png" alt="Sohbet Botu Ekran Görüntüsü 3">
+                    <img src="images/ai_hotel_chatbot/ai_hotel_chatbot_4.png" alt="Sohbet Botu Ekran Görüntüsü 4">
                 </div>
             </div>
         </li>
+
         <li class="project-item">
             <div class="project-logo">
-                <img src="images/tinyhouse/tinyhouse-logo.png" alt="Tiny House Rezervasyon Sistemi Logosu">
+                <img src="images/real_time_emotion_recognition/real_time_emotion_recognition_logo.png" alt="Gerçek Zamanlı Duygu Tanıma Logosu">
             </div>
             <div class="project-content">
-                <strong>Küçük Ev Rezervasyon Sistemi</strong> – Küçük evlerin yönetimi ve kiralanması için Django tabanlı bir web platformu. Türkçe konuşanlar için tasarlanmıştır
-                <a href="https://github.com/louai-aldalati/tinyhouse" target="_blank">GitHub'da Görüntüle</a>
+                <strong>Gerçek Zamanlı Duygu Tanıma (Real-Time Emotion Recognition)</strong> <br>
+                <em>Teknolojiler: Computer Vision, MobileNetV2, Transfer Learning, Python</em>
+                <ul>
+                    <li>8 farklı insan duygusunu yüksek doğrulukla sınıflandırmak için canlı web kamerası akışlarını analiz eden yerel bir bilgisayarlı görü sistemi kuruldu.</li>
+                    <li>Performansı hızlandırmak ve kaynak tüketimini azaltmak için MobileNetV2 mimarisiyle Transfer Learning (Aktarımlı Öğrenme) kullanıldı ve son katmanlarda ince ayar yapıldı.</li>
+                </ul>
+                <a href="https://github.com/louai-aldalati/Emotion-Recognition-MobileNetV2" target="_blank">GitHub'da Görüntüle</a>
                 <div class="project-media">
-                    <img src="images/tinyhouse/tinyhouse-1.png" alt="Tiny House Rezervasyon Sistemi Ekran Görüntüsü 1">
-                    <img src="images/tinyhouse/tinyhouse-2.png" alt="Tiny House Rezervasyon Sistemi Ekran Görüntüsü 2">
-                    <img src="images/tinyhouse/tinyhouse-3.png" alt="Tiny House Rezervasyon Sistemi Ekran Görüntüsü 3">
-                    <img src="images/tinyhouse/tinyhouse-4.png" alt="Tiny House Rezervasyon Sistemi Ekran Görüntüsü 4">
+                    <img src="images/real_time_emotion_recognition/real_time_emotion_recognition_1.png" alt="Duygu Tanıma Ekran Görüntüsü 1">
+                    <img src="images/real_time_emotion_recognition/real_time_emotion_recognition_2.png" alt="Duygu Tanıma Ekran Görüntüsü 2">
+                    <img src="images/real_time_emotion_recognition/real_time_emotion_recognition_3.png" alt="Duygu Tanıma Ekran Görüntüsü 3">
+                    <img src="images/real_time_emotion_recognition/real_time_emotion_recognition_4.png" alt="Duygu Tanıma Ekran Görüntüsü 4">
                 </div>
             </div>
         </li>
-        <!-- Daha fazla proje eklemek için buraya ekleyebilirsiniz -->
+
+        <li class="project-item">
+            <div class="project-logo">
+                <img src="images/weather_forecasting_ml_ api/weather_forecasting_ml_ api_logo.png" alt="Hava Durumu Tahmini ML API Logosu">
+            </div>
+            <div class="project-content">
+                <strong>Hava Durumu Tahmini ML API (Weather Forecasting ML API)</strong> <br>
+                <em>Teknolojiler: Machine Learning, XGBoost, Time-Series Analysis, Django, DRF</em>
+                <ul>
+                    <li>Gelecekteki değer tahmini için zaman serisi verilerini (sıcaklık, nem, rüzgar yönü) analiz etmek üzere XGBoost kullanarak bir makine öğrenmesi modeli tasarlandı ve eğitildi.</li>
+                    <li>Web veya mobil uygulamalarla sorunsuz entegrasyon için Yapay Zeka modelini Django REST API üzerinden bir servis olarak sunan arka uç (backend) geliştirildi.</li>
+                </ul>
+                <a href="https://github.com/louai-aldalati/weather-predictor" target="_blank">GitHub'da Görüntüle</a>
+                <div class="project-media">
+                    <img src="images/weather_forecasting_ml_ api/weather_forecasting_ml_ api_1.png" alt="Hava Durumu Tahmini Ekran Görüntüsü 1">
+                    <img src="images/weather_forecasting_ml_ api/weather_forecasting_ml_ api_2.png" alt="Hava Durumu Tahmini Ekran Görüntüsü 2">
+                    <img src="images/weather_forecasting_ml_ api/weather_forecasting_ml_ api_3.png" alt="Hava Durumu Tahmini Ekran Görüntüsü 3">
+                    <img src="images/weather_forecasting_ml_ api/weather_forecasting_ml_ api_4.png" alt="Hava Durumu Tahmini Ekran Görüntüsü 4">
+                </div>
+            </div>
+        </li>
+
+        <li class="project-item">
+            <div class="project-logo">
+                <img src="images/kelime6/kelime6_logo.png" alt="Kelime6 Platformu Logosu">
+            </div>
+            <div class="project-content">
+                <strong>Kelime6: Dil Öğrenme Platformu</strong> <br>
+                <em>Teknolojiler: Django, Python, Relational Database, Git, Scrum</em>
+                <ul>
+                    <li>Kullanıcı performansına göre kelime görünme aralıklarını planlayan Aralıklı Tekrar Sistemi (SRS) algoritmasına dayalı bir eğitim sistemi programlandı.</li>
+                    <li>Kullanıcı kimlik doğrulaması, analitik paneller ve etkileşimli bir Wordle oyunu içeren dinamik bir test sistemi modülleri geliştirildi.</li>
+                </ul>
+                <a href="https://github.com/louai-aldalati/kelime6" target="_blank">GitHub'da Görüntüle</a>
+                <div class="project-media">
+                    <img src="images/kelime6/kelime6_1.png" alt="Kelime6 Ekran Görüntüsü 1">
+                    <img src="images/kelime6/kelime6_2.png" alt="Kelime6 Ekran Görüntüsü 2">
+                    <img src="images/kelime6/kelime6_3.png" alt="Kelime6 Ekran Görüntüsü 3">
+                    <img src="images/kelime6/kelime6_4.png" alt="Kelime6 Ekran Görüntüsü 4">
+                </div>
+            </div>
+        </li>
+
+        <li class="project-item">
+            <div class="project-logo">
+                <img src="images/tinyhouse/tinyhouse_logo.png" alt="TinyHouse Rezervasyon Logosu">
+            </div>
+            <div class="project-content">
+                <strong>TinyHouse: Rezervasyon Yönetim Sistemi</strong> <br>
+                <em>Teknolojiler: Django, SQL (Stored Procedures, Triggers), RBAC</em>
+                <ul>
+                    <li>Yöneticiler, Ev Sahipleri ve Misafirler için gelişmiş Rol Tabanlı Erişim Kontrolü (RBAC) desteği sunan bir mülk yönetim platformu geliştirildi.</li>
+                    <li>Rezervasyon ve ödeme güncellemelerini otomatikleştirmek için Stored Procedures ve Triggers kullanan normalize edilmiş bir ilişkisel veritabanı tasarlandı.</li>
+                </ul>
+                <a href="https://github.com/louai-aldalati/tinyhouse" target="_blank">GitHub'da Görüntüle</a>
+                <div class="project-media">
+                    <img src="images/tinyhouse/tinyhouse_1.png" alt="TinyHouse Ekran Görüntüsü 1">
+                    <img src="images/tinyhouse/tinyhouse_2.png" alt="TinyHouse Ekran Görüntüsü 2">
+                    <img src="images/tinyhouse/tinyhouse_3.png" alt="TinyHouse Ekran Görüntüsü 3">
+                    <img src="images/tinyhouse/tinyhouse_4.png" alt="TinyHouse Ekran Görüntüsü 4">
+                </div>
+            </div>
+        </li>
     </ul>
-</section>
+    </section>
 
     <section class="contact">
         <h2>İletişim</h2>
-        <p>E-posta: <a href="mailto:luaidalati@gmail.com">luaidalati@gmail.com</a></p>
-        <p>GitHub: <a href="https://github.com/louai-aldalati" target="_blank">https://github.com/louai-aldalati</a></p>
+        <p>E-posta: <a href="mailto:louai.workmail@gmail.com">louai.workmail@gmail.com</a></p>
+        <p>GitHub: <a href="https://github.com/louai-aldalati" target="_blank">github.com/louai-aldalati</a></p>
     </section>
 
     <footer>
-        <p>&copy; 2025 Louai Aldalati</p>
+        <p>&copy; 2026 Louai Aldalati</p>
     </footer>
+
+    <div id="lightbox" class="lightbox">
+        <span class="close-lightbox">&times;</span>
+        <img class="lightbox-content" id="lightbox-img">
+        <a class="prev-btn" onclick="changeImage(-1)">&#10094;</a>
+        <a class="next-btn" onclick="changeImage(1)">&#10095;</a>
+    </div>
+
+    <script src="script.js"></script>
+
 </body>
 </html>

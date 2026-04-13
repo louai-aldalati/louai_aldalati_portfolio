@@ -3,70 +3,157 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>لؤي الدالاتي – طالب هندسة برمجيات</title>
+    <title>لؤي الدالاتي – مطور برمجيات</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
         <h1>لؤي الدالاتي</h1>
-        <p>طالب هندسة برمجيات | مطوّر Django | أتحدث ثلاث لغات</p>
+        <p>مطور برمجيات | حلول الذكاء الاصطناعي والواجهات الخلفية (Django) | أتحدث ثلاث لغات</p>
         <nav>
             <a href="index.html">English</a> |
             <a href="index_tr.html">Türkçe</a>
+            <button id="theme-toggle" class="theme-btn">
+                <span id="theme-icon">🌙</span>
+            </button>
         </nav>
     </header>
 
     <section class="about">
         <h2>من أنا؟</h2>
-        <p>أنا طالب في هندسة البرمجيات، لدي خبرة في تطوير تطبيقات الويب باستخدام إطار عمل Django. أتقن العربية والإنجليزية والتركية بطلاقة.</p>
+        <p>طالب هندسة برمجيات أمتلك خبرة عملية في تطوير تطبيقات الويب (Django) وبناء أنظمة الذكاء الاصطناعي. أعمل على ابتكار حلول متكاملة تدمج تقنيات الواجهات الخلفية (Backend) مع النماذج اللغوية (LLMs) والرؤية الحاسوبية. أجيد ثلاث لغات بطلاقة، وأتميز بالتفكير التحليلي والقدرة على العمل ضمن بيئات متنوعة لحل مشكلات برمجية معقدة.</p>
     </section>
 
     <section class="projects">
-    <h2>مشاريعي</h2>
+    <h2>المشاريع التقنية</h2>
     <ul>
         <li class="project-item">
             <div class="project-logo">
-                <img src="images/kelime6/kelime6-logo.png" alt="لعبة حفظ الكلمات بناءً على مبدأ التكرار 6 مرات شعار">
+                <img src="images/ai_hotel_chatbot/ai_hotel_chatbot_logo.png" alt="مساعد ذكي للشركات شعار">
             </div>
             <div class="project-content">
-                <strong>موقع حفظ كلمات لغة أجنبية</strong> - موقع ويب قائم على Django لحفظ كلمات لغة أجنبية من خلال مبدأ 6 تكرار. موجّه للناطقين بالتركية 
-                <a href="https://github.com/louai-aldalati/kelime6" target="_blank">مشاهدة على GitHub</a>
+                <strong>مساعد ذكي مخصص للشركات (AI Hotel Chatbot)</strong> <br>
+                <em>التقنيات: Llama 3 (8B Instruct), RAG, Fine-Tuning, NLP</em>
+                <ul>
+                    <li>تطوير مساعد ذكي متقدم يعتمد على النموذج اللغوي مفتوح المصدر Llama 3 لتقديم ردود دقيقة ومؤتمتة.</li>
+                    <li>تطبيق تقنيات التوليد المعزز بالاسترجاع (RAG) والضبط الدقيق (Fine-Tuning) لتخصيص إجابات النموذج بشكل كامل بناءً على قواعد وبيانات وسياسات فندق محدد، مما رفع من كفاءة خدمة العملاء.</li>
+                </ul>
+                <a href="https://github.com/louai-aldalati/sunrise_hotel" target="_blank">مشاهدة على GitHub</a>
                 <div class="project-media">
-                    <img src="images/kelime6/kelime6-1.png" alt="لعبة حفظ الكلمات بناءً على مبدأ التكرار 6 مرات لقطة شاشة 1">
-                    <img src="images/kelime6/kelime6-2.png" alt="لعبة حفظ الكلمات بناءً على مبدأ التكرار 6 مرات لقطة شاشة 2">
-                    <img src="images/kelime6/kelime6-3.png" alt="لعبة حفظ الكلمات بناءً على مبدأ التكرار 6 مرات لقطة شاشة 3">
-                    <img src="images/kelime6/kelime6-4.png" alt="لعبة حفظ الكلمات بناءً على مبدأ التكرار 6 مرات لقطة شاشة 4">
+                    <img src="images/ai_hotel_chatbot/ai_hotel_chatbot_1.png" alt="لقطة شاشة 1 مساعد ذكي">
+                    <img src="images/ai_hotel_chatbot/ai_hotel_chatbot_2.png" alt="لقطة شاشة 2 مساعد ذكي">
+                    <img src="images/ai_hotel_chatbot/ai_hotel_chatbot_3.png" alt="لقطة شاشة 3 مساعد ذكي">
+                    <img src="images/ai_hotel_chatbot/ai_hotel_chatbot_4.png" alt="لقطة شاشة 4 مساعد ذكي">
                 </div>
             </div>
         </li>
+
         <li class="project-item">
             <div class="project-logo">
-                <img src="images/tinyhouse/tinyhouse-logo.png" alt="نظام حجز البيوت الصغيرة شعار">
+                <img src="images/real_time_emotion_recognition/real_time_emotion_recognition_logo.png" alt="نظام التعرف على تعابير الوجه شعار">
             </div>
             <div class="project-content">
-                <strong>نظام حجز البيوت الصغيرة</strong> – موقع ويب قائم على Django لنظام إدارة واستئجار البيوت. موجّه للناطقين بالتركية
-                <a href="https://github.com/louai-aldalati/tinyhouse" target="_blank">مشاهدة على GitHub</a>
+                <strong>نظام التعرف على تعابير الوجه في الوقت الفعلي</strong> <br>
+                <em>التقنيات: Computer Vision, MobileNetV2, Transfer Learning, Python</em>
+                <ul>
+                    <li>بناء نظام رؤية حاسوبية محلي يحلل البث المباشر لكاميرا الويب لتصنيف 8 مشاعر إنسانية مختلفة (مثل السعادة، الحزن، الغضب) بدقة عالية.</li>
+                    <li>استخدام تقنية نقل التعلم (Transfer Learning) عبر الاعتماد على معمارية النموذج المسبق التدريب MobileNetV2، وإعادة تدريب الطبقات النهائية (Fine-tuning) لتسريع الأداء وتقليل استهلاك الموارد.</li>
+                </ul>
+                <a href="https://github.com/louai-aldalati/Emotion-Recognition-MobileNetV2" target="_blank">مشاهدة على GitHub</a>
                 <div class="project-media">
-                    <img src="images/tinyhouse/tinyhouse-1.png" alt="نظام حجز البيوت الصغيرة لقطة شاشة 1">
-                    <img src="images/tinyhouse/tinyhouse-2.png" alt="نظام حجز البيوت الصغيرة لقطة شاشة 2">
-                    <img src="images/tinyhouse/tinyhouse-3.png" alt="نظام حجز البيوت الصغيرة لقطة شاشة 3">
-                    <img src="images/tinyhouse/tinyhouse-4.png" alt="نظام حجز البيوت الصغيرة لقطة شاشة 4">
+                    <img src="images/real_time_emotion_recognition/real_time_emotion_recognition_1.png" alt="لقطة شاشة 1 للتعرف على المشاعر">
+                    <img src="images/real_time_emotion_recognition/real_time_emotion_recognition_2.png" alt="لقطة شاشة 2 للتعرف على المشاعر">
+                    <img src="images/real_time_emotion_recognition/real_time_emotion_recognition_3.png" alt="لقطة شاشة 3 للتعرف على المشاعر">
+                    <img src="images/real_time_emotion_recognition/real_time_emotion_recognition_4.png" alt="لقطة شاشة 4 للتعرف على المشاعر">
                 </div>
             </div>
         </li>
-        <!-- يمكنك إضافة المزيد من المشاريع هنا -->
-    </ul>
-</section>
 
+        <li class="project-item">
+            <div class="project-logo">
+                <img src="images/weather_forecasting_ml_ api/weather_forecasting_ml_ api_logo.png" alt="نظام التنبؤ بالطقس شعار">
+            </div>
+            <div class="project-content">
+                <strong>نظام التنبؤ بالطقس (Weather Forecasting ML API)</strong> <br>
+                <em>التقنيات: Machine Learning, XGBoost, Time-Series Analysis, Django, Django REST Framework</em>
+                <ul>
+                    <li>تصميم وتدريب نموذج تعلم آلة باستخدام خوارزمية XGBoost لتحليل البيانات الزمنية (درجة الحرارة، الرطوبة، اتجاه الرياح) والتنبؤ بالقيم المستقبلية.</li>
+                    <li>تطوير الواجهة الخلفية للنظام باستخدام إطار عمل Django، وتقديم نموذج الذكاء الاصطناعي كخدمة برمجية متكاملة عبر واجهة برمجة تطبيقات (Django REST API) لسهولة ربطه مع تطبيقات الويب أو الموبايل.</li>
+                </ul>
+                <a href="https://github.com/louai-aldalati/weather-predictor" target="_blank">مشاهدة على GitHub</a>
+                <div class="project-media">
+                    <img src="images/weather_forecasting_ml_ api/weather_forecasting_ml_ api_1.png" alt="لقطة شاشة 1 للتنبؤ بالطقس">
+                    <img src="images/weather_forecasting_ml_ api/weather_forecasting_ml_ api_2.png" alt="لقطة شاشة 2 للتنبؤ بالطقس">
+                    <img src="images/weather_forecasting_ml_ api/weather_forecasting_ml_ api_3.png" alt="لقطة شاشة 3 للتنبؤ بالطقس">
+                    <img src="images/weather_forecasting_ml_ api/weather_forecasting_ml_ api_4.png" alt="لقطة شاشة 4 للتنبؤ بالطقس">
+                </div>
+            </div>
+        </li>
+
+        <li class="project-item">
+            <div class="project-logo">
+                <img src="images/kelime6/kelime6_logo.png" alt="منصة تعلم لغات شعار">
+            </div>
+            <div class="project-content">
+                <strong>منصة تعلم لغات تعتمد على التكرار المتباعد (Kelime6)</strong> <br>
+                <em>التقنيات: Django, Python, Relational Database, Git, Scrum, Agile</em>
+                <ul>
+                    <li>برمجة نظام تعليمي يعتمد على خوارزمية التكرار المتباعد (SRS) لجدولة ظهور الكلمات زمنياً بناءً على دقة أداء المستخدم.</li>
+                    <li>تطوير وحدات متكاملة تشمل: مصادقة المستخدمين، لوحات تقارير تحليلية، ونظام اختبارات ديناميكي يتضمن لعبة (Wordle) التفاعلية.</li>
+                    <li>إدارة التطوير بمنهجية Agile/Scrum، مع الالتزام الصارم بمعايير (KISS) لتجنب الـ Code Smells، وإدارة التحديثات عبر GitHub.</li>
+                </ul>
+                <a href="https://github.com/louai-aldalati/kelime6" target="_blank">مشاهدة على GitHub</a>
+                <div class="project-media">
+                    <img src="images/kelime6/kelime6_1.png" alt="منصة Kelime6 لقطة شاشة 1">
+                    <img src="images/kelime6/kelime6_2.png" alt="منصة Kelime6 لقطة شاشة 2">
+                    <img src="images/kelime6/kelime6_3.png" alt="منصة Kelime6 لقطة شاشة 3">
+                    <img src="images/kelime6/kelime6_4.png" alt="منصة Kelime6 لقطة شاشة 4">
+                </div>
+            </div>
+        </li>
+
+        <li class="project-item">
+            <div class="project-logo">
+                <img src="images/tinyhouse/tinyhouse_logo.png" alt="نظام إدارة الحجوزات العقارية شعار">
+            </div>
+            <div class="project-content">
+                <strong>نظام إدارة الحجوزات العقارية (TinyHouse Management System)</strong> <br>
+                <em>التقنيات: Django, Python, Relational Database, SQL (Stored Procedures, Triggers, Functions), RBAC</em>
+                <ul>
+                    <li>تطوير منصة لإدارة العقارات تدعم نظام صلاحيات متقدم (RBAC) لثلاث فئات مختلفة: مدراء (Admins)، أصحاب عقارات (Hosts)، ومستأجرين (Guests).</li>
+                    <li>هندسة قاعدة بيانات علائقية (Normalized)، مع توظيف متقدم للـ SQL عبر (Stored Procedures) و (Triggers) لأتمتة تحديثات الحجز والدفع.</li>
+                    <li>بناء ميزات أساسية شملت: الفلترة المتقدمة، تتبع التوافر الزمني، إدارة طلبات الحجز والتقييمات، وتوليد التقارير المالية.</li>
+                </ul>
+                <a href="https://github.com/louai-aldalati/tinyhouse" target="_blank">مشاهدة على GitHub</a>
+                <div class="project-media">
+                    <img src="images/tinyhouse/tinyhouse_1.png" alt="نظام TinyHouse لقطة شاشة 1">
+                    <img src="images/tinyhouse/tinyhouse_2.png" alt="نظام TinyHouse لقطة شاشة 2">
+                    <img src="images/tinyhouse/tinyhouse_3.png" alt="نظام TinyHouse لقطة شاشة 3">
+                    <img src="images/tinyhouse/tinyhouse_4.png" alt="نظام TinyHouse لقطة شاشة 4">
+                </div>
+            </div>
+        </li>
+    </ul>
+    </section>
 
     <section class="contact">
         <h2>التواصل</h2>
-        <p>البريد الإلكتروني: <a href="mailto:luaidalati@gmail.com">luaidalati@gmail.com</a></p>
-        <p>جيت هاب: <a href="https://github.com/louai-aldalati" target="_blank">https://github.com/louai-aldalati</a></p>
+        <p>البريد الإلكتروني: <a href="mailto:louai.workmail@gmail.com">louai.workmail@gmail.com</a></p>
+        <p>جيت هاب: <a href="https://github.com/louai-aldalati" target="_blank">github.com/louai-aldalati</a></p>
     </section>
 
     <footer>
-        <p>&copy; 2025 لؤي الدالاتي</p>
+        <p>&copy; 2026 لؤي الدالاتي</p>
     </footer>
+
+    <div id="lightbox" class="lightbox">
+        <span class="close-lightbox">&times;</span>
+        <img class="lightbox-content" id="lightbox-img">
+        <a class="prev-btn" onclick="changeImage(-1)">&#10094;</a>
+        <a class="next-btn" onclick="changeImage(1)">&#10095;</a>
+    </div>
+
+    <script src="script.js"></script>
+
 </body>
 </html>

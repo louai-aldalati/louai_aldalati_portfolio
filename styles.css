@@ -1,117 +1,315 @@
+/* ======= استيراد خطوط حديثة ======= */
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700&family=Inter:wght@400;600;700&display=swap');
+
+/* ======= متغيرات الألوان ======= */
+:root {
+    --bg-color: #f8f9fa;
+    --section-bg: #ffffff;
+    --text-color: #475569;      /* لون النصوص العادية */
+    --heading-color: #0f172a;   /* لون العناوين والخط العريض */
+    --text-muted: #64748b;      /* لون النصوص الثانوية */
+    --header-bg: #0f172a;
+    --header-text: #ffffff;
+    --border-color: #e2e8f0;    /* لون الفواصل والحدود */
+    --link-color: #0ea5e9;
+    --card-shadow: rgba(0, 0, 0, 0.05);
+}
+
+/* ======= ألوان الوضع الليلي ======= */
+[data-theme="dark"] {
+    --bg-color: #0f172a;
+    --section-bg: #1e293b;
+    --text-color: #cbd5e1;      /* نصوص فاتحة للقراءة */
+    --heading-color: #f8fafc;   /* عناوين بيضاء ناصعة */
+    --text-muted: #94a3b8;      /* نصوص ثانوية فاتحة */
+    --header-bg: #020617;
+    --header-text: #38bdf8;
+    --border-color: #334155;    /* فواصل داكنة تناسب الخلفية */
+    --link-color: #38bdf8;
+    --card-shadow: rgba(0, 0, 0, 0.3);
+}
+
 /* ======= أساسي ======= */
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Cairo', 'Inter', sans-serif;
     margin: 0;
     padding: 0;
-    line-height: 1.8;           /* زيادة المسافة بين الأسطر */
-    background: #f4f4f4;        /* لون خلفي أفتح */
-    color: #222;                /* لون نص داكن لسهولة القراءة */
-    font-size: 18px;            /* زيادة حجم الخط الأساسي */
+    line-height: 1.8;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    transition: background-color 0.3s, color 0.3s;
+    font-size: 18px;
 }
 
 /* ======= الرأس ======= */
 header {
-    background: #1a1a1a;        /* داكن أكثر لمزيد من التباين */
-    color: #fff;
-    padding: 2rem 1rem;         /* مساحة أكبر حول المحتوى */
+    background-color: var(--header-bg);
+    color: var(--header-text);
+    padding: 3rem 1rem;
     text-align: center;
+    transition: background-color 0.3s, color 0.3s;
 }
 header h1 {
-    font-size: 2.5rem;          /* عنوان أكبر */
+    font-size: 2.8rem;
     margin-bottom: 0.5rem;
+    font-weight: 700;
 }
 header p {
-    font-size: 1.2rem;          /* نص ثانوي أكبر */
-    margin-bottom: 1rem;
+    font-size: 1.2rem;
+    margin-bottom: 1.5rem;
+    color: #cbd5e1; 
 }
 header nav a {
     color: #fff;
     margin: 0 1rem;
     text-decoration: none;
-    font-size: 1rem;
-    transition: color .3s;
+    font-size: 1.1rem;
+    font-weight: 600;
+    transition: color 0.3s ease;
 }
 header nav a:hover {
-    color: #ffcc00;             /* لون تفاعلي عند المرور */
+    color: #38bdf8; 
 }
 
 /* ======= العناوين ======= */
 h2 {
     font-size: 2rem;
-    margin-bottom: 1rem;
-    border-bottom: 2px solid #ddd;
+    margin-bottom: 1.5rem;
+    color: var(--heading-color); /* تم ربطها بالمتغير */
+    border-bottom: 3px solid var(--border-color); /* تم ربطها بالمتغير */
     padding-bottom: 0.5rem;
+    display: inline-block;
+    transition: color 0.3s, border-color 0.3s;
 }
 
 /* ======= الأقسام ======= */
 section {
-    padding: 2rem 1rem;
-    max-width: 900px;
-    margin: auto;
-    background: #fff;           /* خلفية بيضاء لكل قسم */
-    border-radius: 8px;         /* زوايا مستديرة */
-    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
-    margin-bottom: 2rem;
+    padding: 2.5rem 2rem;
+    max-width: 1000px; 
+    margin: 2rem auto;
+    background-color: var(--section-bg);
+    border-radius: 12px; 
+    box-shadow: 0 4px 6px -1px var(--card-shadow);
+    transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+/* ======= القوائم الرئيسية ======= */
+.projects > ul {
+    list-style: none; 
+    padding: 0;
+    margin: 0;
 }
 
 /* ======= مشاريع ======= */
 .project-item {
     display: flex;
-    flex-wrap: wrap;            /* يدعم الالتفاف على الشاشات الصغيرة */
+    flex-wrap: wrap;
     align-items: flex-start;
-    gap: 1rem;
-    margin-bottom: 2rem;
+    gap: 1.5rem;
+    margin-bottom: 3rem;
+    padding-bottom: 2rem;
+    border-bottom: 1px solid var(--border-color); /* تم ربطها بالمتغير */
+    transition: border-color 0.3s;
 }
+.project-item:last-child {
+    border-bottom: none;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
 .project-logo img {
-    width: 150px;               /* تكبير الشعار */
+    width: 160px;
     height: auto;
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+    transition: transform 0.3s ease;
 }
+.project-logo img:hover {
+    transform: scale(1.05); 
+}
+
 .project-content {
     flex: 1;
+    min-width: 300px; 
     font-size: 1rem;
 }
 .project-content strong {
-    font-size: 1.2rem;
+    font-size: 1.4rem;
+    color: var(--heading-color); /* تم ربطها بالمتغير */
+    display: block;
+    margin-bottom: 0.2rem;
+    transition: color 0.3s;
 }
-.project-content a {
+.project-content em {
+    font-size: 0.95rem;
+    color: var(--text-muted); /* تم ربطها بالمتغير */
+    display: block;
+    margin-bottom: 1rem;
+    transition: color 0.3s;
+}
+
+/* تنسيق النقاط الداخلية لتفاصيل المشروع */
+.project-content ul {
+    padding-inline-start: 1.5rem;
+    margin-bottom: 1.5rem;
+    color: var(--text-color); /* تم ربطها بالمتغير */
+    transition: color 0.3s;
+}
+.project-content ul li {
+    margin-bottom: 0.5rem;
+}
+
+/* زر GitHub */
+.project-content > a {
     display: inline-block;
-    margin-top: 0.5rem;
+    background-color: #24292e; 
+    color: #fff;
+    padding: 0.6rem 1.2rem;
+    border-radius: 6px;
     text-decoration: none;
-    color: #0056b3;
-    transition: opacity .3s;
+    font-weight: 600;
+    font-size: 0.95rem;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    margin-bottom: 1.5rem;
 }
-.project-content a:hover {
-    opacity: 0.7;
+.project-content > a:hover {
+    background-color: #000;
+    transform: translateY(-2px); 
 }
+
+/* صور المشاريع (Screenshots) */
 .project-media {
     display: flex;
     flex-wrap: wrap;
-    gap: 0.5rem;
-    margin-top: 1rem;
+    gap: 0.8rem;
 }
 .project-media img {
-    width: calc(50% - 0.5rem);  /* صورتان في الصف */
+    width: calc(50% - 0.4rem);
     height: auto;
-    border: 1px solid #ddd;
     border-radius: 8px;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.project-media img:hover {
+    transform: translateY(-3px) scale(1.02);
+    box-shadow: 0 8px 15px rgba(0,0,0,0.15);
+    z-index: 1;
 }
 
 /* ======= تواصل ======= */
-.contact p,
-.contact a {
+.contact p {
     font-size: 1.1rem;
-    margin-bottom: 0.5rem;
+    margin-bottom: 0.8rem;
+}
+.contact a {
+    color: var(--link-color); /* تم ربطها بالمتغير */
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s;
+}
+.contact a:hover {
+    text-decoration: underline;
 }
 
 /* ======= تذييل ======= */
 footer {
-    background: #1a1a1a;
-    color: #fff;
+    background: #0f172a;
+    color: #94a3b8;
     text-align: center;
-    padding: 1rem;
-    font-size: 0.9rem;
+    padding: 1.5rem;
+    font-size: 1rem;
+    margin-top: 2rem;
 }
+
+/* ======= النافذة المنبثقة للصور (Lightbox) ======= */
+.lightbox {
+    display: none; 
+    position: fixed;
+    z-index: 1000;
+    padding-top: 50px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(15, 23, 42, 0.95); 
+    backdrop-filter: blur(5px); 
+}
+
+.lightbox-content {
+    margin: auto;
+    display: block;
+    max-width: 90%;
+    max-height: 80vh;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.5);
+    animation: zoomIn 0.3s ease;
+}
+
+@keyframes zoomIn {
+    from {transform: scale(0.9); opacity: 0;}
+    to {transform: scale(1); opacity: 1;}
+}
+
+/* زر الإغلاق */
+.close-lightbox {
+    position: absolute;
+    top: 20px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: color 0.3s;
+}
+
+.close-lightbox:hover,
+.close-lightbox:focus {
+    color: #38bdf8;
+}
+
+/* أزرار التنقل (التالي والسابق) */
+.prev-btn, .next-btn {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -50px;
+    color: white;
+    font-weight: bold;
+    font-size: 30px;
+    transition: 0.3s;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+.next-btn {
+    right: 5%;
+    border-radius: 3px 0 0 3px;
+}
+
+.prev-btn {
+    left: 5%;
+}
+
+.prev-btn:hover, .next-btn:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+    color: #38bdf8;
+}
+
+/* تعديل مؤشر الماوس للصور لتوضيح أنها قابلة للضغط */
+.project-media img, .project-logo img {
+    cursor: pointer;
+}
+
+/* تنسيق زر التبديل */
+.theme-btn {
+    background: none;
+    border: 2px solid #38bdf8;
+    cursor: pointer;
+    border-radius: 50%;
+    padding: 5px 10px;
+    font-size: 1.2rem;
+    transition: transform 0.3s ease;
+}
+.theme-btn:hover { transform: scale(1.1); }
