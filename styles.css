@@ -70,6 +70,27 @@ header nav a {
 header nav a:hover {
     color: #38bdf8; 
 }
+/* ======= زر تحميل السيرة الذاتية في الرأس ======= */
+.cv-btn {
+    display: inline-block;
+    margin-top: 1.5rem;
+    padding: 0.8rem 2rem;
+    background-color: var(--link-color); /* يأخذ اللون الأزرق السماوي العصري */
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 1.1rem;
+    border-radius: 8px; /* زوايا دائرية ناعمة */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15); /* ظل لإعطاء عمق للزر */
+    transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.cv-btn:hover {
+    background-color: #0284c7; /* درجة أغمق قليلاً عند المرور لجذب الانتباه */
+    transform: translateY(-3px); /* حركة لطيفة للأعلى */
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.25);
+    color: #ffffff;
+}
 
 /* ======= العناوين ======= */
 h2 {
@@ -310,6 +331,7 @@ footer {
     border-radius: 50%;
     padding: 5px 10px;
     font-size: 1.2rem;
+    margin-inline-start: 1rem; /* هذه الإضافة ستبعد الزر عن اللغات */
     transition: transform 0.3s ease;
 }
 .theme-btn:hover { transform: scale(1.1); }
